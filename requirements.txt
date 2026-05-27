@@ -1,0 +1,6 @@
+requests==2.32.3
+aiohttp==3.11.16
+pandas==2.2.3
+python-dotenv==1.0.1
+websockets==15.0.1
+numpy==2.2.4

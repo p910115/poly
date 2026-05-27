@@ -1,0 +1,28 @@
+# app/config.py
+ALLOWED_KEYWORDS = [
+    "bitcoin", "btc",
+    "ethereum", "eth",
+    "solana", "sol",
+    "nasdaq", "spy", "qqq", "s&p",
+    "nvda", "tsla", "apple", "meta",
+    "tsmc", "台積電",
+    "美股",
+]
+
+BLOCKED_KEYWORDS = [
+    "election", "president", "vote", "voting",
+    "congress", "senate",
+    "taiwan election", "trump", "biden",
+    "蔡英文", "賴清德", "韓國瑜", "柯文哲",
+    "馬英九", "陳水扁", "台灣",
+    "KMT", "DPP",
+    "總統", "大選", "立委", "民進黨", "國民黨", "選舉",
+    "戰爭", "war",
+]
+
+MIN_TRADES = 20
+MIN_WINRATE = 0.55
+MIN_VOLUME = 1000
+MAX_POLITICS_RATIO = 0.0
+
+DATABASE_PATH = "data/wallets.db"
