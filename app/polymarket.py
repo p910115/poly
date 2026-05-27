@@ -1,23 +1,30 @@
 import requests
 
-URL = "https://data-api.polymarket.com/trades"
+
+POLYMARKET_API = "https://data-api.polymarket.com/trades"
 
 
-def fetch_recent_trades():
+async def fetch_recent_trades():
     try:
-        response = requests.get(URL, timeout=10)
+        response = requests.get(
+            POLYMARKET_API,
+            params={"limit": 100},
+            timeout=10
+        )
+
+        print("STATUS:", response.status_code)
 
         if response.status_code != 200:
-            print("API ERROR:", response.status_code)
             return []
 
         data = response.json()
 
-        if isinstance(data, list):
-            return data
+        if not isinstance(data, list):
+            return []
 
-        return data.get("history", [])
+        return data
 
     except Exception as e:
-        print("FETCH ERROR:", e)
+        print("ERROR FETCHING TRADES:", e)
         return []
+

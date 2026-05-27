@@ -1,39 +1,42 @@
 # app/database.py
 
-import aiosqlite
-from config import DATABASE_PATH
+import sqlite3
+
+DB_NAME = "polymarket.db"
 
 
-CREATE_WALLET_TABLE = """
-CREATE TABLE IF NOT EXISTS wallets (
-    wallet TEXT PRIMARY KEY,
-    total_trades INTEGER,
-    wins INTEGER,
-    losses INTEGER,
-    pnl REAL,
-    winrate REAL,
-    score REAL,
-    politics_ratio REAL,
-    updated_at TEXT
-)
-"""
+def init_db():
+    conn = sqlite3.connect(DB_NAME)
+    cur = conn.cursor()
+
+    cur.execute("""
+    CREATE TABLE IF NOT EXISTS trades (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        title TEXT,
+        side TEXT,
+        size REAL,
+        wallet TEXT,
+        timestamp DATETIME DEFAULT CURRENT_TIMESTAMP
+    )
+    """)
+
+    conn.commit()
+    conn.close()
 
 
-CREATE_TRADES_TABLE = """
-CREATE TABLE IF NOT EXISTS trades (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    wallet TEXT,
-    market_title TEXT,
-    side TEXT,
-    amount REAL,
-    pnl REAL,
-    timestamp TEXT
-)
-"""
+def save_trade(trade):
+    conn = sqlite3.connect(DB_NAME)
+    cur = conn.cursor()
 
+    cur.execute("""
+    INSERT INTO trades (title, side, size, wallet)
+    VALUES (?, ?, ?, ?)
+    """, (
+        trade.get("title"),
+        trade.get("side"),
+        float(trade.get("size", 0)),
+        trade.get("wallet")
+    ))
 
-async def init_db():
-    async with aiosqlite.connect(DATABASE_PATH) as db:
-        await db.execute(CREATE_WALLET_TABLE)
-        await db.execute(CREATE_TRADES_TABLE)
-        await db.commit()
+    conn.commit()
+    conn.close()

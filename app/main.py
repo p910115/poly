@@ -1,82 +1,73 @@
 import asyncio
-from collections import defaultdict
 
 from app.polymarket import fetch_recent_trades
-from app.scanner import print_trades
-
-try:
-    from app.wallet.scorer import rank_wallets
-except Exception:
-    rank_wallets = None
-
-
-# =========================================================
-# NORMALIZE TRADE
-# =========================================================
-def normalize_trade(t):
-    return {
-        "side": t.get("side", "UNKNOWN"),
-        "title": t.get("title", "UNKNOWN"),
-        "size": float(t.get("size", 0)),
-        "wallet": (
-            t.get("wallet")
-            or t.get("proxyWallet")
-            or t.get("user")
-            or "unknown"
-        ),
-    }
+from app.scanner import filter_recent_trades, print_trades
+from app.wallet_db import (
+    load_wallet_db,
+    update_wallet_stats,
+    print_top_wallets
+)
 
 
-# =========================================================
-# SIMPLE SCORING
-# =========================================================
-def fallback_rank_wallets(trades, top_n=10):
-    scores = defaultdict(float)
-
-    for t in trades:
-        wallet = t["wallet"]
-        size = t["size"]
-
-        if t["side"] == "BUY":
-            scores[wallet] += size
-        else:
-            scores[wallet] -= size * 0.5
-
-    ranked = sorted(scores.items(), key=lambda x: x[1], reverse=True)
-
-    return ranked[:top_n]
-
-
-# =========================================================
+# ============================================================
 # MAIN
-# =========================================================
+# ============================================================
+
 async def main():
-    raw = fetch_recent_trades()
 
-    print("STATUS: 200")
+    # ========================================================
+    # LOAD DB
+    # ========================================================
 
-    if not raw:
-        print("No trades found")
+    wallet_db = load_wallet_db()
+
+    # ========================================================
+    # FETCH TRADES
+    # ========================================================
+
+    trades = await fetch_recent_trades()
+
+    if not trades:
+        print("No trades fetched.")
         return
 
-    trades = [normalize_trade(t) for t in raw]
+    # ========================================================
+    # FILTER
+    # ========================================================
 
-    print("\n=== FILTERED TRADES ===\n")
-    print_trades(trades)
+    filtered = filter_recent_trades(
+        trades=trades,
+        min_size=1
+    )
 
-    print("\n=== TOP WALLETS ===\n")
+    # ========================================================
+    # PRINT
+    # ========================================================
 
-    if rank_wallets:
-        try:
-            top = rank_wallets(trades, top_n=10)
-        except Exception:
-            top = fallback_rank_wallets(trades)
-    else:
-        top = fallback_rank_wallets(trades)
+    print_trades(filtered)
 
-    for wallet, score in top:
-        print(wallet, round(score, 2))
+    # ========================================================
+    # UPDATE DB
+    # ========================================================
 
+    update_wallet_stats(
+        wallet_db=wallet_db,
+        trades=filtered
+    )
+
+    # ========================================================
+    # PRINT TOP WALLETS
+    # ========================================================
+
+    print_top_wallets(
+        wallet_db=wallet_db,
+        top_n=10
+    )
+
+
+# ============================================================
+# ENTRY
+# ============================================================
 
 if __name__ == "__main__":
     asyncio.run(main())

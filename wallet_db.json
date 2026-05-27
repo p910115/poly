@@ -1,0 +1,282 @@
+{
+  "0x25f4707c93e4bfdf26cd6c5cc46c5464691cf88e": {
+    "total_volume": 5.0,
+    "trade_count": 1
+  },
+  "0x6afcf8e7d7b5ad38ab4a16303ffaf0d3498b5d32": {
+    "total_volume": 51.94,
+    "trade_count": 1
+  },
+  "0x645a91730f588c5586e8860936a7e3554303fd84": {
+    "total_volume": 33.54482099999999,
+    "trade_count": 17
+  },
+  "0x20d2309cd92b797ae7ca175ed828ed8a27fbe29d": {
+    "total_volume": 10.45,
+    "trade_count": 2
+  },
+  "0x9cbf78b2ef6958e5d47eb8fcd9d78ae4e88aa8a8": {
+    "total_volume": 40.66095,
+    "trade_count": 2
+  },
+  "0x4d40c3f3627f64591eac428cd4248c651a9c398d": {
+    "total_volume": 2.36,
+    "trade_count": 1
+  },
+  "0x75cc3b63a2f2423085e10706c78b494017b93ce1": {
+    "total_volume": 13.2788,
+    "trade_count": 2
+  },
+  "0xd950a1a89f3e61a7a9efc85a46e440ce58c15e86": {
+    "total_volume": 13.23,
+    "trade_count": 2
+  },
+  "0x5e2b9261b0c4f697b55bf921ff2bc227183d9101": {
+    "total_volume": 7.416662,
+    "trade_count": 1
+  },
+  "0x907cca2cfe1f46061ac80eaaf62cff8f838623c1": {
+    "total_volume": 20.0,
+    "trade_count": 1
+  },
+  "0x13167216b6539289cac3458c7a9eace6db53b090": {
+    "total_volume": 7.26,
+    "trade_count": 1
+  },
+  "0x6329185519d5f79419719f83f1ae629dc48cd39c": {
+    "total_volume": 2.0,
+    "trade_count": 1
+  },
+  "0xf419556a9758214628edff29dce8f39a8aa13ce7": {
+    "total_volume": 1.21,
+    "trade_count": 1
+  },
+  "0x041b6a51314b2edda4ad494b0d73c55fefaed3eb": {
+    "total_volume": 188.15625,
+    "trade_count": 1
+  },
+  "0x6dfd2ac9604cb8bcc7427df50dba9f636d89e9b6": {
+    "total_volume": 5.252516,
+    "trade_count": 4
+  },
+  "0xba63d3a0105a3c01bfa561015c36911c8d1536dc": {
+    "total_volume": 10.0,
+    "trade_count": 2
+  },
+  "0xb90d923238bfc15d93cd974c68dabfce021b7db5": {
+    "total_volume": 2.469131,
+    "trade_count": 1
+  },
+  "0xa991049a265f0f29f8a1a8856b170ad799c10935": {
+    "total_volume": 6.0,
+    "trade_count": 1
+  },
+  "0x1a9ad8af5a5e54a2cbc6a69718b9fcf860641609": {
+    "total_volume": 5.208325,
+    "trade_count": 1
+  },
+  "0x712be8f7388a7ac628e835463c48ffb6a40e100d": {
+    "total_volume": 18.0,
+    "trade_count": 1
+  },
+  "0x428cea73ef2ae02b3adf196ae40362688f2a70a2": {
+    "total_volume": 6.172836,
+    "trade_count": 1
+  },
+  "0x0079c31913ed195a00d17c23562e78d46a3154d8": {
+    "total_volume": 12.125,
+    "trade_count": 1
+  },
+  "0x30eeb4b0fdb230cb0726ea3a0f164d3f6dbe5fd1": {
+    "total_volume": 71.064857,
+    "trade_count": 1
+  },
+  "0x0c756fa3d6ca412d7a6658687b6846d99296498c": {
+    "total_volume": 15.641973,
+    "trade_count": 1
+  },
+  "0x13be3104a2fc8439278fe3ef7dc6d89787985672": {
+    "total_volume": 5.0,
+    "trade_count": 1
+  },
+  "0x41a902578f7fea0ba6c8fe6c372384eb44fb69a3": {
+    "total_volume": 15.641973,
+    "trade_count": 1
+  },
+  "0x497119c8056a19430b24484a39aaf3a243d00f26": {
+    "total_volume": 1.234563,
+    "trade_count": 1
+  },
+  "0x261c0ee5ef9b0343a126aed8e926cc95b31da01c": {
+    "total_volume": 10.432094,
+    "trade_count": 1
+  },
+  "0x7d82c73c8aab1317b94980da90c6dd220d43b573": {
+    "total_volume": 15.0,
+    "trade_count": 2
+  },
+  "0xd39cdfe5a9c49b739d7111dadc5acea256418d35": {
+    "total_volume": 1.56,
+    "trade_count": 1
+  },
+  "0x38ab8ff9075817800f5545b05156e63c146aab66": {
+    "total_volume": 2.48,
+    "trade_count": 1
+  },
+  "0xd038f9b632bd55b258844774092093412947d5fd": {
+    "total_volume": 69.23,
+    "trade_count": 1
+  },
+  "0x6083acde5fc5522650f241dbdcbace8278e1fe53": {
+    "total_volume": 5.0,
+    "trade_count": 1
+  },
+  "0x28bf066c6cb952da62d6d182c16ad173ada64a4e": {
+    "total_volume": 7.0,
+    "trade_count": 1
+  },
+  "0x88394534c6d050ac528964a2df5928dc5935ddb5": {
+    "total_volume": 25.0,
+    "trade_count": 1
+  },
+  "0x942e79166821f3f4e67872e44f1672fcccd2be27": {
+    "total_volume": 7.0,
+    "trade_count": 1
+  },
+  "0x30fde7cfb2abb50b6b520d1b414f86ff1dd8b019": {
+    "total_volume": 25.0,
+    "trade_count": 1
+  },
+  "0xea58b6928ae44db7c9f6ba55d43b3542808b520c": {
+    "total_volume": 20.833325,
+    "trade_count": 1
+  },
+  "0x978aead35bd911f16cbc3f556c007cfeb5926fb7": {
+    "total_volume": 17.0,
+    "trade_count": 1
+  },
+  "0x123359632390af69ac767adc08c4ee6ee55ef7ab": {
+    "total_volume": 30.93,
+    "trade_count": 1
+  },
+  "0xdf18fbca3f04dde4dcc55ec2e4936338a76ab371": {
+    "total_volume": 19.84,
+    "trade_count": 1
+  },
+  "0xb06a0eae498750ed0acac7e1f759f741c56e52f5": {
+    "total_volume": 30.0,
+    "trade_count": 1
+  },
+  "0xfd557e6db670c9704bc1d0d8e8b585c7d9c9f905": {
+    "total_volume": 7.0,
+    "trade_count": 1
+  },
+  "0xcfff4295288ee29f75a38a7028611b7c1e93673d": {
+    "total_volume": 7.0,
+    "trade_count": 1
+  },
+  "0x6e05f60ef1d696352cc626f31be7dbfeea7bd898": {
+    "total_volume": 6.0,
+    "trade_count": 1
+  },
+  "0x1838e737d446f893a35b195eedacabc0f0d76ba8": {
+    "total_volume": 6.944442,
+    "trade_count": 1
+  },
+  "0x129218f5e47faa19e67e8c53ed56e4975cb8af62": {
+    "total_volume": 6.44,
+    "trade_count": 1
+  },
+  "0xc387c2a40d389f17b723b6bba9b18b7dbd2de4f4": {
+    "total_volume": 63.29,
+    "trade_count": 1
+  },
+  "0x53710295208ea2a930ff6182e7812c5c3c841033": {
+    "total_volume": 3.042595,
+    "trade_count": 1
+  },
+  "0x32e4abe3e97aaf3c95c315ba3ffbe7b2a313beed": {
+    "total_volume": 20.0,
+    "trade_count": 2
+  },
+  "0xbd050887b28ef80590e25b0d0e4110154d930a55": {
+    "total_volume": 19.333331,
+    "trade_count": 1
+  },
+  "0xac9bd3239cd5ef72793bf548cb83bf411ed1e7df": {
+    "total_volume": 10.0,
+    "trade_count": 1
+  },
+  "0xe1b537a593c8115c327ce07e7b7f4560f5b620ac": {
+    "total_volume": 4.07,
+    "trade_count": 1
+  },
+  "0x3905169f679c57825fb54ff165e9ef4608f282c3": {
+    "total_volume": 1.369862,
+    "trade_count": 1
+  },
+  "0xaa5c7b2138563c8d97086fe0877348d690d0a240": {
+    "total_volume": 30.34,
+    "trade_count": 1
+  },
+  "0x63cc40081ebb2b5563bd2949816169d720f8eec5": {
+    "total_volume": 8.0,
+    "trade_count": 1
+  },
+  "0x72abe52af7032fa1c7078a16ddb341c94fe9e1ee": {
+    "total_volume": 20.67175,
+    "trade_count": 1
+  },
+  "0x3f2f54596d799c18e806c5900e4967714fa28150": {
+    "total_volume": 21.022404,
+    "trade_count": 1
+  },
+  "0xa5b17799332b276f748feca8649b6e23272cc6dc": {
+    "total_volume": 12.66,
+    "trade_count": 1
+  },
+  "0x3653235d75a0d5969c42f7514d4df8ea5f8cef74": {
+    "total_volume": 14.0,
+    "trade_count": 1
+  },
+  "0xeb68675c06e0bb9f08ba510550912d77289ce362": {
+    "total_volume": 14.0,
+    "trade_count": 1
+  },
+  "0xef02ae62bf79392eaaa2c7a4a07daa872d444f7e": {
+    "total_volume": 690.0,
+    "trade_count": 1
+  },
+  "0xad476391891f228f7f009fc9b93d5a8b71bbba74": {
+    "total_volume": 5.0,
+    "trade_count": 1
+  },
+  "0x4e49aada013678308feae9f745229ef5102ae379": {
+    "total_volume": 5.337834,
+    "trade_count": 1
+  },
+  "0x18523b1eb7593ce1d6a4dc683d652c8ab87f2332": {
+    "total_volume": 1.5,
+    "trade_count": 1
+  },
+  "0xe9076a87c5ed90ef16e6fe6529c943baeca0cff6": {
+    "total_volume": 8.0,
+    "trade_count": 1
+  },
+  "0x7fc99a327f6e09a6aecaef604c748253cb126c65": {
+    "total_volume": 6.25,
+    "trade_count": 1
+  },
+  "0xe9e953d8eea9c3d220685cc28e9c57d8114084fb": {
+    "total_volume": 7.107,
+    "trade_count": 1
+  },
+  "0xf5806cbabbfe7c222965dce0050c3256f4a773e0": {
+    "total_volume": 1000.0,
+    "trade_count": 1
+  },
+  "0x8d86f6dcde505b39c21999d6205d797e55daad9b": {
+    "total_volume": 5.0,
+    "trade_count": 1
+  }
+}
