@@ -1,5 +1,46 @@
+# Python
 __pycache__/
-venv/
-.env
 *.pyc
-wallet_stats.json
+*.pyo
+*.pyd
+
+# Virtual env
+venv/
+.env/
+
+# Logs
+*.log
+
+# Mac
+.DS_Store
+
+# VSCode
+.vscode/
+
+# Database
+*.db
+*.sqlite3
+
+# Runtime cache
+.cache/
+
+# Secrets
+.env
+secrets.json
+
+# Local wallet state
+wallet_db.json
+
+# Test outputs
+tmp/
+temp/
+
+# Pytest
+.pytest_cache/
+
+# Coverage
+.coverage
+htmlcov/
+
+# OS
+Thumbs.db
